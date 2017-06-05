@@ -12,7 +12,7 @@ You need to create small project for taking online quizes. There will be 3 scree
 
 ## Screen #1 - Create Quiz
 
-On this screen user can create quiz. He must enter `Quiz Name` and `Questions Count`. To create quiz, user must click on `Create Quiz` button. Every question can have up to 5 possible answers. There could be only one correct answer. You need to create quiz with specified number of questions. Number of answers and which one is the correct one must be picked randomly. Here is the example to give you the idea:
+On this screen user can create quiz. He must enter `Quiz Name` and `Questions Count`. Quiz can have up to 30 questions. To create quiz, user must click on `Create Quiz` button. Every question can have up to 5 possible answers. There could be only one correct answer. You need to create quiz with specified number of questions. Number of answers and which one is the correct one must be picked randomly. Here is the example to give you the idea:
 
 ![](https://s3.amazonaws.com/docscamp/uploads/images/0/5/0/4/1/2/05041217237e3346f953f8e29fb500c0.png)
 
@@ -32,4 +32,3 @@ You can print either letters or numbers as response indexes. Circles with possib
 There must be `Save and finish` button. It will save selected responses and will redirect user back to quizes list (`screen #2`). There must be a check that user selected responses for all questions.
 
 There must be some solution which will sync clicks if this screen opened in multiple tabs (or browsers) for this same quiz. So, basically, if you have same quiz opened in two different tabs (or browsers) - click on answer `1` for question `1` in one tab must redraw other tab and indicate that answer `1` selected for question `1`. Finishing quiz in one tab must redirect all other opened tabs for this same quiz to quizes list (`screen #2`).
-
