@@ -1,0 +1,41 @@
+.quizTest{
+
+}
+.quizTest h1{
+
+}
+.quizTest .questionItem{
+    margin-bottom: 20px;
+}
+.quizTest .questionItem p:first-child {
+    font-size: 3rem;
+    color: #85004B;
+}
+.quizTest .questionItem p:last-child {
+    padding: 0 30px;
+}
+.quizTest .questionItem p:last-child button{
+    border: 2px solid #48036f;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #48036f;
+    margin-right: 20px;
+    background: transparent;
+    outline: none;
+}
+
+.quizTest .questionItem p:last-child button:hover{
+    color: #A6A600;
+    background: #48036f;
+}
+
+.quizTest .questionItem p:last-child button.active{
+    border: 2px solid #9F3ED5;
+    color: #9F3ED5;
+}
+.quizTest .questionItem p:last-child button.disable{
+    border: 2px solid #876ED7;
+    color: #876ED7;
+}

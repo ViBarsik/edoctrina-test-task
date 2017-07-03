@@ -1,0 +1,262 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #4A148C;
+    border-top: 1px solid #48036f;
+    padding-top: 20px;
+    color: #F3E5F5;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #F3E5F5;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #F3E5F5;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+/** bootstrap overwrite **/
+.form-control{
+    border: 1px solid #48036F;
+}
+
+
+/** header **/
+.navbar-inverse{
+    background-color: #4a148c;;
+}
+
+/** content **/
+h1{
+    margin-bottom: 20px;
+}
+
+/** page login **/
+.site-login{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #48036F;
+    padding: 0 20px 20px;
+}
+
+/** page registration **/
+.site-registration{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #48036F;
+    padding: 0 20px 20px;
+}
+
+/** messages **/
+.messageContainer {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+
+.messageBox {
+    border-left: 10px solid #000;
+    width: 280px;
+    min-height: 140px;
+    position: relative;
+    margin-top: 10px;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: 'museo_sans_cyrl700', sans-serif;
+    font-size: 13px;
+    line-height: 1.2;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.messageBox i.icon-cross {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    opacity: .7;
+}
+.messageBox i.icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.icon-msgBox-success {
+    background: url(/images/msgBox-S.svg) center center / contain no-repeat;
+}
+.icon-msgBox-warning{
+    background: url(/images/msgBox-N.svg) center center / contain no-repeat;
+}
+.icon-msgBox-danger{
+    background: url(/images/msgBox-E.svg) center center / contain no-repeat;
+}
+.icon-cross{
+    background: url(/images/cross.svg) center center / contain no-repeat;
+}
+
+.messageBox p {
+    text-transform: uppercase;
+}
+.messageBox.success {
+     border-color: #4caf50;
+     color: #4caf50;
+}
+.messageBox.warning {
+     border-color: #ffc94b;
+     color: #ffc94b;
+}
+.messageBox.danger {
+     border-color: #ff1c27;
+     color: #ff1c27;
+}
+
+.messageBox.show {
+     animation: show .5s;
+}
+.messageBox.hide {
+     animation: hide .5s;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: scale(.1)
+    }
+    to {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+@keyframes hide {
+    from {
+        opacity: 1;
+        transform: scale(1)
+    }
+    to {
+        opacity: 0;
+        transform: scale(.1)
+    }
+}

@@ -1,0 +1,35 @@
+.quiz-list>div{
+    padding : 0;
+}
+.quiz-list .quiz-list-item{
+    border: 1px solid #48036F;
+    margin: 10px;
+    padding: 10px;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+.quiz-list .quiz-list-item *{
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+    transition: color 0.5s;
+}
+
+.quiz-list .quiz-list-item:hover, .quiz-list .quiz-list-item.taked {
+    background-color: #AD66D5;
+    color : white;
+}
+
+.quiz-list .quiz-list-item.testing {
+    background-color: #FFA000;
+    color : white;
+}
+
+.quiz-list .quiz-list-item h2{
+    margin-top: 0;
+}
