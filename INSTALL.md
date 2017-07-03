@@ -95,6 +95,6 @@ node index.js
 
 This completes the installation. If everything was done correctly in the previous steps and the necessary requirements are met, 
 then the application will start working successfully. If you get errors after installation or something does not work out, 
-you can contact the author by email `ilativ.oknepilip@gmail.com` or by the following phone `+380664198905`
+you can contact the author by email `ilativ.oknepilip@gmail.com`
 
 
